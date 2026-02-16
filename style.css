@@ -46,7 +46,7 @@ footer {
 /* hero section */
 
 .hero {
-  background: url("background.jpg")
+  background-image: url("background.jpg")
     no-repeat center center/cover;
   height: 100vh;
   display: flex;
@@ -302,4 +302,5 @@ footer {
   border: none;
   background: #111;
   color: white;
+
 }
