@@ -1,0 +1,305 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  transition: 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+nav a {
+  text-decoration: none;
+  color: #111827;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+/* hero section */
+
+.hero {
+  background: url("background.jpg")
+    no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+}
+
+.hero-content {
+  padding: 50px;
+  color: white;
+  text-align: left;
+  border-radius: 12px;
+  max-width: 700px;
+  margin-top: 75px;
+}
+
+
+/* Content */
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  max-width: 700px;
+  padding: 40px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: white;
+  color: #1e3a8a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #e5e7eb;
+}
+
+/* =========================
+   NAVIGATION DARK MODE
+========================= */
+
+body.dark-mode nav a {
+  color: #ffffff ;
+}
+
+body.dark-mode nav a:hover {
+  color: #60a5fa;
+}
+
+nav a {
+  color: #000000 ;
+  font-weight: 500;
+}
+
+body.dark-mode p {
+  background: #111827;
+}
+
+body.dark-mode h2 {
+  color: #ffffff;
+}
+
+body.dark-mode p{
+  color: #d1d5db;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.product:hover {
+  transform: translateY(-6px);
+}
+
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product h3 {
+  padding: 15px;
+  margin: 0;
+}
+
+.price {
+  padding: 0 15px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.product button {
+  margin: 15px;
+  padding: 12px;
+  width: calc(100% - 30px);
+  border: none;
+  background: #111827;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: #2563eb;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  padding: 12px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.checkout-btn {
+  padding: 12px 20px;
+  background: #16a34a;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* =========================
+   SEARCH & SORT
+========================= */
+
+#search-input,
+#sort-select {
+  padding: 10px;
+  margin: 15px 10px 15px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+body.dark-mode nav {
+  background: #020617;
+}
+
+body.dark-mode .product,
+body.dark-mode form {
+  background: #1e293b;
+  color: white;
+}
+
+body.dark-mode footer {
+  background: black;
+}
+
+.footer {
+  background: #111827;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 60px;
+  font-size: 14px;
+}
+/* =========================
+   STICKY FOOTER FIX
+========================= */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1; 
+}
+
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+#dark-toggle {
+  margin-left: 20px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #111;
+  color: white;
+}

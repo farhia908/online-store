@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | MyStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>MyStore</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    <a href="contact.html">Contact</a>
+    <button id="dark-toggle">🌙</button>
+  </div>
+</nav>
+
+<section class="container">
+  <h1>Checkout</h1>
+  <p>
+    Please fill in your delivery details to complete your order.
+  </p>
+
+  <form id="checkout-form">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Delivery Address" required>
+    <button type="submit">Place Order</button>
+  </form>
+
+  <p id="checkout-message"></p>
+</section>
+
+<footer>
+  <p>© 2026 MyStore. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

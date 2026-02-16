@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | MyStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>MyStore</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    <a href="contact.html">Contact</a>
+    <button id="dark-toggle">🌙</button>
+  </div>
+</nav>
+
+<section class="container">
+  <h1>Our Products</h1>
+  <p>
+    Browse our wide range of premium electronics carefully selected 
+    to deliver quality, performance, and modern design.
+  </p>
+
+  <input type="text" id="search-input" placeholder="Search products...">
+  
+  <select id="sort-select">
+    <option value="">Sort by Price</option>
+    <option value="low">Low to High</option>
+    <option value="high">High to Low</option>
+  </select>
+
+  <div class="products">
+
+    <!-- PRODUCT 1 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Smartphone">
+      <h3>Smartphone Pro Max</h3>
+      <p class="price">$750</p>
+      <button onclick="addToCart('Smartphone Pro Max',750)">Add to Cart</button>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" alt="perfume">
+      <h3>coco perfume</h3>
+      <p class="price">$150</p>
+      <button onclick="addToCart('coco perfume',150)">Add to Cart</button>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Headphones">
+      <h3>Wireless Headphones</h3>
+      <p class="price">$130</p>
+      <button onclick="addToCart('Headphones',130)">Add to Cart</button>
+    </div>
+
+    <!-- PRODUCT 4 -->
+    <div class="product">
+      <img src="smart.jpg" alt="Smart Watch">
+      <h3>Smart Watch </h3>
+      <p class="price">$250</p>
+      <button onclick="addToCart('Smart Watch Series 5',250)">Add to Cart</button>
+    </div>
+
+    <!-- PRODUCT 5 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef" alt="Tablet">
+      <h3>Tablet Pro 11"</h3>
+      <p class="price">$500</p>
+      <button onclick="addToCart('Tablet Pro 11',600)">Add to Cart</button>
+    </div>
+
+    <!-- PRODUCT 6 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Gaming Laptop">
+      <h3>Gaming Laptop X</h3>
+      <p class="price">$1500</p>
+      <button onclick="addToCart('Gaming Laptop X',1500)">Add to Cart</button>
+    </div>
+
+    <!-- PRODUCT 7 -->
+    <div class="product">
+      <img src="flash.jpg" alt="flash">
+      <h3>Flash drives</h3>
+      <p class="price">$15</p>
+      <button onclick="addToCart('flash',15)">Add to Cart</button>
+    </div>
+
+    <!-- PRODUCT 8 -->
+    <div class="product">
+      <img src="camera.jpg" alt="Camera">
+      <h3>Digital Camera 4K</h3>
+      <p class="price">$980</p>
+      <button onclick="addToCart('Digital Camera 4K',980)">Add to Cart</button>
+    </div>
+
+    <!-- product 9 -->
+    <div class="product">
+      <img src="air.jpg" alt="digital air">
+      <h3>Digital air circulator</h3>
+      <p class="price">$45</p>
+      <button onclick="addToCart('Digital air circulator',45)">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>more products coming soon...</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

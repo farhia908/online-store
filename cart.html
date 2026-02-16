@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart | MyStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>MyStore</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    <a href="contact.html">Contact</a>
+    <button id="dark-toggle">🌙</button>
+  </div>
+</nav>
+
+<section class="container">
+  <h1>Your Shopping Cart</h1>
+  <p>
+    Review your selected products before proceeding to checkout.
+  </p>
+
+  <div id="cart-items"></div>
+
+  <h3>Total: $<span id="cart-total">0</span></h3>
+
+  <button onclick="clearCart()">Clear Cart</button>
+  <br><br>
+  <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+</section>
+
+<footer>
+  <p>Thank you for Shopping with us.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
